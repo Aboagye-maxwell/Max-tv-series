@@ -1,0 +1,226 @@
+:root {
+    --deepblue: rgb(50, 72, 105);
+    --lightblue: rgb(63, 111, 182);
+    --darkwhite: #f5f5f5;
+    --white: #ffffff;
+}
+
+div ul li{
+    font-size: 12px;
+}
+
+.nav-image{
+    height: 5%;
+    width: 5%;
+    padding-right: 1%;
+}
+
+.new-start{
+    background-color: var(--deepblue);
+    height: 33%;
+    width:100% ;
+    color: white;
+}
+
+.new-start-1{
+    background-color: var(--darkwhite);
+    height: 33%;
+    width:100% ;
+    color: var(--deepblue);
+}
+
+.new-start-2{
+    background-color: var(--darkwhite);
+    height: 33%;
+    width:100% ;
+    color: var(--deepblue);
+}
+
+.new-start-i{
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    font-size: medium;
+}
+
+.new-start-ii{
+    padding: 5%;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.card{
+    transition-duration: 1000ms;
+}
+
+.card:hover{
+    filter: grayscale(80%);
+}
+
+.new-start:hover{
+    border-right: 8px solid var(--lightblue);
+    cursor: pointer;
+}
+
+.new-start-1:hover{
+    background-color: var(--deepblue);
+    border-right: 8px solid var(--lightblue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.new-start-2:hover{
+    background-color: var(--deepblue);
+    border-right: 8px solid var(--lightblue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.most{
+    background: url('/image/film2.png');
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+div #time{
+    background-color: var(--deepblue);height: 200px;width: 200px;
+    border-radius: 50%;border: 16px solid var(--white);float: right;
+    position: absolute;top: 80%;right: 40px;
+}
+
+div #time h3{
+    text-align: center;color: var(--white);font-size: 35px;
+}
+
+
+.search-results{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--deepblue);
+    width: fit-content;
+    height: fit-content;
+    position: page;
+
+}
+
+#search-results #box{
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+#title{
+    text-align: center;
+    color: var(--lightblue);
+}
+
+#title h1{
+    font-weight: bolder;
+}
+
+.cl{
+    color: var(--lightblue);
+}
+
+.filter{
+    background-color: var(--lightblue);
+    color: var(--white);border-top: 4px dashed var(--deepblue);border-bottom: 4px dashed var(--deepblue);
+    text-align: center;text-transform: uppercase;
+}
+
+.ho:hover{
+    cursor: pointer;
+}
+
+#til{
+    text-transform: capitalize;
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    div #time{
+        height: 100px;width: 100px;
+        bottom: 73%;right: 38px;
+        border: 5px solid #ffffff;
+    }
+
+    div #time h3{
+        font-size: 13px;
+    }
+
+    #d-truancated{
+        display: none;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    div #time{
+        height: 100px;width: 100px;
+        bottom: 58%;right: 40px;
+        border: 2px solid #ffffff;
+    }
+
+    div #time h3{
+        font-size: 10px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    div #time{
+        height: 100px;width: 100px;
+        bottom: 61%;right: 40px;
+        border: 7px solid #ffffff;
+    }
+
+    div #time h3{
+        font-size: 12px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 912px) {
+
+    div #time{
+        height: 150px;width: 150px;
+        bottom: 53%;right: 40px;
+        border: 9px solid #ffffff;
+    }
+
+    div #time h3{
+        font-size: 30px;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    div #time{
+        height: 200px;width: 200px;
+        bottom: 48%;right: 40px;
+        border: 10px solid #ffffff;
+    }
+
+    div #time h3{
+        font-size: 40px;
+    }
+
+}
